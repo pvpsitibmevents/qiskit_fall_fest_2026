@@ -28,13 +28,21 @@ export default function RegisterModal({ isOpen, onClose }) {
     try {
       if (GOOGLE_SCRIPT_URL) {
         // Send payload to Google Sheets via Google Apps Script Web App
+        const params = new URLSearchParams();
+        params.append('timestamp', payload.timestamp);
+        params.append('fullName', payload.fullName);
+        params.append('email', payload.email);
+        params.append('department', payload.department);
+        params.append('year', payload.year);
+        params.append('registrationType', payload.registrationType);
+
         await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
-          mode: 'no-cors', // Prevents CORS issues with Google Apps Script redirect
+          mode: 'no-cors',
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
           },
-          body: JSON.stringify(payload),
+          body: params.toString(),
         });
       } else {
         console.log('Registration Payload (Google Script URL not configured yet):', payload);
