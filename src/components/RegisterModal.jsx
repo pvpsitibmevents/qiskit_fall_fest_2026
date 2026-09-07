@@ -111,9 +111,9 @@ export default function RegisterModal({ isOpen, onClose }) {
                   onChange={(e) => setFormData({ ...formData, registrationType: e.target.value })}
                   className="w-full px-4 py-3 rounded-md bg-surface-container-low border border-outline-variant/30 font-body-md text-sm focus:outline-none focus:border-primary"
                 >
-                  <option>Full Pass (Workshops + Hackathon)</option>
-                  <option>Workshops & Bootcamp Only</option>
-                  <option>Hackathon Only (Oct 28-30)</option>
+                  <option>Full Pass (Pre-Fest + Main Fest + Post-Fest)</option>
+                  <option>Main Fest Only (Oct 15–17)</option>
+                  <option>Pre-Fest Sessions Only (15 Sept - 8 Oct)</option>
                 </select>
               </div>
 

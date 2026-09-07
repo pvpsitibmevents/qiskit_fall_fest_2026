@@ -13,7 +13,7 @@ export default function Footer({ setActivePage, onOpenRegister }) {
             <span className="font-headline-md text-headline-md text-surface">PVPSIT Qiskit Fall Fest '26</span>
           </div>
           <p className="font-body-md text-body-md text-tertiary-fixed-dim max-w-sm text-sm">
-            Quantum Computing for All. Empowering the next generation of innovators at Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada.
+            Q-CONNECT 2026: From Quantum Curiosity to Quantum Circuits. Empowering the next generation of innovators at Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function Footer({ setActivePage, onOpenRegister }) {
             </li>
             <li>
               <button onClick={() => setActivePage('schedule')} className="text-tertiary-fixed-dim hover:text-primary-fixed transition-all duration-200 opacity-80 hover:opacity-100 hover:scale-105 active:scale-110 inline-block">
-                Event Schedule
+                Event Roadmap (12 Events)
               </button>
             </li>
             <li>
@@ -55,12 +55,12 @@ export default function Footer({ setActivePage, onOpenRegister }) {
             </li>
             <li>
               <button onClick={() => setActivePage('schedule')} className="text-tertiary-fixed-dim hover:text-primary-fixed transition-all duration-200 opacity-80 hover:opacity-100 hover:scale-105 active:scale-110 inline-block">
-                Hackathon (Oct 28-30)
+                Main Fest (Oct 15–17)
               </button>
             </li>
             <li>
-              <button onClick={() => setActivePage('about')} className="text-tertiary-fixed-dim hover:text-primary-fixed transition-all duration-200 opacity-80 hover:opacity-100 hover:scale-105 active:scale-110 inline-block">
-                Pre-Fest Workshops
+              <button onClick={() => setActivePage('schedule')} className="text-tertiary-fixed-dim hover:text-primary-fixed transition-all duration-200 opacity-80 hover:opacity-100 hover:scale-105 active:scale-110 inline-block">
+                Pre-Fest Sessions (15 Sept - 8 Oct)
               </button>
             </li>
           </ul>
@@ -72,13 +72,13 @@ export default function Footer({ setActivePage, onOpenRegister }) {
           <ul className="space-y-2 font-body-md text-sm">
             <li><a href="#" className="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100">Code of Conduct</a></li>
             <li><a href="#" className="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100">Privacy Policy</a></li>
-            <li><a href="#" className="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100">PVPSIT University Site</a></li>
+            <li><a href="https://pvpsit.ac.in" target="_blank" rel="noreferrer" className="text-tertiary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100">PVPSIT University Site</a></li>
           </ul>
         </div>
 
         {/* Copyright Footer */}
         <div className="md:col-span-4 mt-12 pt-8 border-t border-surface/10 text-center text-tertiary-fixed-dim font-body-md text-sm opacity-80">
-          © 2026 PVPSIT Qiskit Community. Quantum Computing for All.
+          © 2026 PVPSIT Qiskit Community. Q-CONNECT 2026.
         </div>
       </div>
     </footer>
