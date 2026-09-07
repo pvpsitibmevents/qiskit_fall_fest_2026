@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-// Optional: Set your deployed Google Apps Script Web App URL here or in .env file
-const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || '';
+// Deployed Google Apps Script Web App URL for Google Sheets integration
+const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbyDWpevz55kgeOTjOcwaSoOxn6Y2VFjlSP1dX7F7peN4FcgjdSynyLfgRPdGJWf14FN/exec';
 
 export default function RegisterModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
